@@ -1,0 +1,275 @@
+
+#centroPrincipal {
+    height: 320px;
+    width: 100%;
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+ #espacio {
+    height: 110px;
+    width: 100%;
+    background-color: white;
+    /*1er valor arriba y abajo, 2do lados */
+    /*arriba abajo izq derecha*/
+     /*auto lo centra*/
+    margin: 0 auto;
+    /*con respecto al contenido de adentro (a los bordes)*/
+    padding: 3px;
+
+}
+#centroPrincipal .centro{
+    height: 275px;
+    margin-left: 29px;
+    background-color: aqua;
+    float: left;
+    width: 22%;
+    margin-top: 55px;
+/*hace una barra para ir bajando y leer la imagen bien*/
+   overflow: auto;
+}
+
+#centroPrincipal .centro .imgCentro{
+    height: 150px;
+    width: 100%;
+    display: block;
+   
+}
+
+.img{ 
+    padding-left: 2%;
+    background-color: aqua;
+    text-align: center;
+   /* color: aliceblue;*/
+   font-size: 19px;
+   /*Hace que un elemento se muestre pero esta la propiedad hidden que lo que hace 
+   esque los elementos desaparezcan pero quede su espacio*/
+    visibility: visible;
+    
+}
+
+.clearfix {
+    clear: both; /* Limpiar flotados */
+  }
+
+
+
+  .contenedor {
+    position: relative; /* Posición relativa para los elementos absolutos */
+    width: 300px;
+    height: 200px;
+  }
+  
+  /*div principal*/
+  /*Con el absolute position hace que los otros div se puedan
+  superponer la caja1 y 2*/
+  .caja {
+    position: absolute; /* Posición absoluta para superponer elementos */
+    width: 100px;
+    height: 100px;
+    /*hace que la letra que dice "caja 2" salga en el medio*/
+    text-align: center;
+    line-height: 95px;
+    font-size: 15px;
+  }
+  
+  .caja1 {
+    background-color: #ffcc00;
+    top: 40px;
+    left: 50px;
+    z-index: 1; /* Caja 1 está por encima */
+  }
+  
+  .caja2 {
+    background-color: #33ccff;
+    top: 50px;
+    left: 70px;
+    z-index: 2; /* Caja 2 está por encima de la caja 1 */
+  }
+/*FLEXBOX*/
+
+  .flex-container {
+    background-color: beige;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .flex-container2 {
+    background-color: beige;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .flex-container2 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .flex-container3 {
+    background-color: beige;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .flex-container3 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .flex-container4 {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+  }
+  .flex-container4 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  /*Hace los items al top del contenedor*/
+  .flex-container5 {
+    background-color: beige;
+    display: flex;
+    height: 150px;
+    align-items: flex-start;
+  }
+  .flex-container5 > div {
+    background-color: #f1f1f1;
+    width: 70px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container6 {
+    display: flex;
+    height: 150px;
+    /*cuando se encoge la pantalla*/
+    flex-wrap: wrap;
+    /*tamaño de cuadros blancos*/
+    align-content: space-between;
+    overflow: scroll;
+    background-color: beige;
+  }
+  
+  .flex-container6 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+/*FLEX ITEMS*/
+
+.flex-container7 {
+    display: flex;
+    align-items: stretch;
+    background-color: beige;
+  }
+  
+  .flex-container7>div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container8 {
+    display: flex;
+    align-items: stretch;
+    background-color: beige;
+  }
+  
+  .flex-container8>div {
+   
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container9 {
+    display: flex;
+    align-items: stretch;
+    background-color: beige;
+  }
+  
+  .flex-container9>div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container10 {
+    display: flex;
+    align-items: stretch;
+    background-color: beige;
+  }
+  
+  .flex-container10 > div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container11 {
+    display: flex;
+    align-items: stretch;
+    background-color: beige;
+  }
+  
+  .flex-container11 > div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container12 {
+    display: flex;
+    height: 200px;
+    background-color: beige;
+  }
+  
+  .flex-container12 > div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+
+  
+
+
